@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>入力フォーム</title>
+	</head>
+	<body>
+		<form action="/form/buy" method="get">
+			<input name="address" type="text">
+			<textarea name="message"></textarea>
+			
+			<input type="radio" name="size" id="size1" value="S">
+			<label for="size1">Sサイズ</label>
+			<input type="radio" name="size" id="size2" value="M">
+			<label for="size2">Mサイズ</label>
+			<input type="radio" name="size" id="size3" value="L">
+			<label for="size3">Lサイズ</label>
+			
+			<input type="checkbox" name="rap" id="rap">
+			<label for="rap">プレゼント用に包装する</label>	
+		
+			<button type="submit">送信</button>
+		</form>
+	</body>
+</html>

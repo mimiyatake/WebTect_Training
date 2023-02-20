@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<link rel="stylesheet" href="css/FormTable.css">
+	</head>
+	<body>
+		<div class="wrap">
+			<h1>おいしいチョコミント</h1>
+			<form action="/form/buy" method="get">
+				<table>
+					<tr>
+						<td>配送先住所</td>
+						<td><input name="address" type="text"></td>
+					</tr>
+					<tr>
+						<td>商品サイズ</td>
+						<td><input type="radio" name="size" id="size1" value="S">
+							<label for="size1">Sサイズ</label>
+							<input type="radio" name="size" id="size2" value="M">
+							<label for="size2">Mサイズ</label>
+							<input type="radio" name="size" id="size3" value="L">
+							<label for="size3">Lサイズ</label></td>
+					</tr>
+					<tr>
+						<td>オプション</td>
+						<td><input type="checkbox" name="rap" id="rap">
+							<label for="rap">プレゼント用に包装する</label></td>
+					</tr>
+					<tr><td>備考</td>
+						<td><textarea name="message"></textarea></td>
+					</tr>
+				</table>
+				<div class="center"><button type="submit">送信</button></div>
+			</form>
+		</div>
+	</body>
+</html>

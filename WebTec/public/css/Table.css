@@ -1,0 +1,13 @@
+@charset "UTF-8";
+th.merit{
+	background-color:steelblue;
+}
+td.merit{
+	background-color:lightsteelblue;
+}
+th.demerit{
+	background-color:tomato;
+}
+td.demerit{
+	background-color:pink;
+}
