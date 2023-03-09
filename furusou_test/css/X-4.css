@@ -1,0 +1,123 @@
+@charset "UTF-8";
+	body{
+		display: flex;
+		width: 100%;
+		max-width: 1280px;
+		/*ページを中央寄せに設定*/
+		margin: 5px auto;
+		/*背景画像の設定*/
+		background-image: url(../images/note.png);
+		background-color: rgba(255,255,255,0.8);
+		background-blend-mode: lighten;	
+	  }
+
+	  main{
+		/*背景画像の設定*/
+		background-image: url(../images/note.png);
+		background-color: rgba(255,255,255,0.8);
+		background-blend-mode: lighten;	
+	  }
+  	
+  	h1{
+		font-family: monospace;
+		font-size: 32px;
+		border: solid 2px black;
+		padding: 1rem 1.5rem;
+		color: black;
+		margin: 0;
+		text-align: center;
+	}
+	
+	h2{
+		font-size: 22px;
+		border-bottom: solid 3px black;
+		text-align: center;
+	}
+
+	/*説明分の設定*/
+	text.form{
+		width: 50%;
+	}
+	
+	/*画像と説明を横並びにする*/
+	.flex{
+		display: flex;
+		/*コンテンツ間隔の設定*/
+		gap: 10px 10px;
+		/*画像の縦伸び防止*/
+		align-items: flex-start;
+	}
+
+	/*ブレーメンの画像設定*/
+	.flex .bremen{
+		/*画像サイズの設定*/
+		/*width: 50%;*/
+		width: 600px;
+	}
+
+	/*chickenの説明*/
+	.explanation{
+		position: absolute;
+		font-size: 30px;
+		color:black;
+		margin:0;
+		transform: translate(50%,20%);
+		border: 2px;
+	}
+
+	/*chickenの画像設定*/
+	.flex .chicken{
+		overflow:hidden;
+		background-color: black;
+		opacity: 0.5;
+	}
+
+	/*続きボタンの設定*/
+	.next-button{
+		background: #eee;
+		border-radius: 3px;
+		position: relative;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin: 0 auto;
+		max-width: 280px;
+		padding: 10px 25px;
+		color: #313131;
+		transition: 0.3s ease-in-out;
+		font-weight: 500;
+		width: 15%;
+		margin-right: 0px;
+	}
+
+	/*続きボタンに触れたあと設定*/
+	.next-button:hover{
+		background: #313131;
+		color: #FFF;
+	}
+
+	/*戻るボタンの設定*/
+	.back-button{
+		background: #eee;
+		border-radius: 3px;
+		position: relative;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin: 0 auto;
+		max-width: 280px;
+		padding: 10px 25px;
+		color: #313131;
+		transition: 0.3s ease-in-out;
+		font-weight: 500;
+		/*戻るボタンを左下に固定する*/
+		position: fixed;
+		bottom: 20px;
+		left: 20px;
+	}
+
+	/*戻るボタンに触れたあと設定*/
+	.back-button:hover{
+		background: #313131;
+		color: #FFF;
+	}

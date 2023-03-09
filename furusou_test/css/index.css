@@ -1,0 +1,52 @@
+@charset 'UTF-8';
+body {
+    margin: 0;
+    font-family: "ヒラギノ角ゴ ProN W3", "游ゴシック", "メイリオ", Arial, sans-serif;
+}
+h1 {
+    height: 7.5rem;
+    margin: 0;
+    text-align: center;
+    font-size: 5.5rem;
+    font-family: "メイリオ";
+    background-color: greenyellow;
+}
+h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1;         /*行の高さ(単位不要)*/
+    background: repeating-linear-gradient(-45deg,#ddd,#ddd 2px,#fff 0,#fff 12px);
+}
+h2:first-letter {            /*1文字目だけ*/
+    color:deeppink;
+    font-size: 130%;        /*1.3倍*/
+    font-weight: bold;      /*太字*/
+}
+.grid {
+    display: grid;
+    width: 65vw;
+    margin: 1vw auto;
+    gap: 1vw;
+    grid-template-columns: repeat(3, 20vw); /*3列*/
+    grid-template-rows: repeat(2, 20vw);    /*2行*/
+}
+.grid-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.grid-item:hover {          /*オンマウス時*/
+    transform: scale(1.05); /*1.05倍*/
+    filter: opacity(80%);   /*透明度20%*/
+}
+/*
+FONE SIZE
+==========================================================*/
+@media(max-width:600px) {
+    .grid{
+        grid-template-columns: repeat(2, 32vw); /*2列*/
+        grid-template-rows: repeat(3, 32vw);    /*3行*/
+    }
+}

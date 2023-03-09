@@ -1,0 +1,96 @@
+@charset 'UTF-8';
+body {
+    margin:0;
+    font-family: "ヒラギノ角ゴ ProN W3", "游ゴシック", "メイリオ", Arial, sans-serif;
+}
+header {
+    height:4rem;
+    margin: 0 15vw;
+    background-color:rosybrown;
+}
+h1 {
+    margin: 0;
+    padding-left: 2.5rem;
+    color:mistyrose;
+    font-family: "游明朝";
+    font-size: 2.5rem;
+}
+h2 {
+    font-family: "游明朝";
+    font-size: 3rem;
+}
+main {
+    height: 49rem;
+    margin: 0 15vw;
+    display: flex;                  /*横並び*/
+    flex-direction: row-reverse;    /*右から配置*/
+    justify-content: space-between; /*両端寄せ*/
+    background: url(../images/flower.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.poem {
+    height: 30rem;
+    width: 60%;
+    margin: 2rem 2rem 0 0;
+
+    writing-mode: vertical-rl;  /*右から左に縦書き*/
+    text-orientation: upright;  /*数字も縦書き*/
+    font-size: 1.5rem;
+}
+.wrap-left {
+    margin: 2rem 0 0 2rem;
+    text-align: left;
+}
+.author {
+    height: auto;
+    width: 10rem;
+    margin: 1rem;
+}
+.author-face {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;           /*丸くする*/
+    object-position: -20px 10px;  /*切り抜きの開始位置*/
+    border: solid 1px silver;   /*枠線*/
+}
+.author-info {
+    font-size: 1.1rem;
+}
+.back-button {
+    margin: 1rem;
+    padding: 10px 25px;
+    color: mistyrose;
+    text-decoration: none;      /*下線を消す*/
+    background: rosybrown;
+    border-radius: 5px;         /*角の丸み*/
+}
+/*
+FONE SIZE
+==========================================================*/
+@media(max-width:800px) {
+    header {
+        margin:0;
+       }
+    main {
+        margin:0;
+    }
+}
+@media(max-width:600px) {
+    h2{
+        line-height:1.4;
+        font-size: 2rem;
+    }
+    p{
+        margin:0;
+        font-size:1rem;
+    }
+    .poem {
+        margin: 2rem 0 0 0;
+    }
+    .wrap-left{
+        margin: 2rem 0 0 1rem;
+    }
+}

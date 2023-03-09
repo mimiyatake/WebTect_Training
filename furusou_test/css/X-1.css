@@ -1,0 +1,80 @@
+@charset 'UTF-8';
+body {
+    margin: 0;
+    font-family: "ヒラギノ角ゴ ProN W3", "游ゴシック", "メイリオ", Arial, sans-serif;
+}
+main {
+    height: 800px;
+    padding: 8vh 25vw 0 5rem;
+    background: linear-gradient(180deg, rgb(190,240,250,0.3), rgb(90,180,250,0.3)),url(../images/sea.jpg);  /*グラデーションを追加*/
+    background-repeat: no-repeat;		/*繰り返さない*/
+    background-size: contain;			/*画像を全て表示*/
+    background-position: right ;		/*右寄せ*/
+}
+h1 {
+    margin: 0;
+    font-size: 5rem;
+    color: darkkhaki;
+    font-family: "游明朝";
+}
+h2 {
+    font-size: 1.4rem;
+    color: midnightblue;
+}
+.poem {
+    width: fit-content;         /*子が入る最小サイズ*/
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: midnightblue;
+    background-color:rgba(250,250,250,0.6);
+}
+.author {
+    display: flex;              /*横並び*/
+    margin: 5rem 0 2rem;        /*左右0*/
+}
+.author-face {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	object-position: 0px 10px;  /*切り抜きの開始位置*/
+	border: solid 1px silver; /*枠線*/
+}   
+.author-info {
+		margin: 1rem;
+}
+.back-button {
+    margin: 0 auto;
+    padding: 10px 25px;
+    color: white;
+    text-decoration: none;      /*下線を消す*/
+    background: midnightblue;
+    border-radius: 5px;         /*角の丸み*/
+}
+/*
+FONE SIZE
+==========================================================*/
+@media(max-width:900px) {
+    main {
+        height: 800px;
+        padding: 1rem 1rem 0 1rem;
+        background-size: cover;	
+        background-position: top ;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        margin:0 0 30vh;
+        font-size: 1.2rem;
+    }
+    .poem {
+        font-size: 1rem;
+    }    
+    .word {
+        padding:3px 1rem;
+        line-height: 1.2;
+    }
+    .author {
+        margin: 1rem 0 1rem;
+    }
+}

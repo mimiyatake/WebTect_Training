@@ -1,0 +1,138 @@
+@charset "UTF-8";
+	body {
+		/*ページを中央寄せに設定*/
+		margin: auto;
+	}
+
+	/*メインの設定*/
+	main{
+		/*繰り返し表示しない*/
+		background-repeat:  no-repeat;
+		overflow: auto;
+	}
+	
+	/*ヘッダーの設定*/
+	header{
+		position: fixed;					/*ヘッダーの固定*/
+		width: 100%;						/*ヘッダーサイズの固定*/
+		height: 50px;
+	}
+	
+	/*navの設定*/
+	nav{
+		width: 100%;							/*フッターサイズの固定*/
+		height: 70px;
+		background-color: black;
+		justify-content: center;
+		bottom: 5px;
+	}
+	
+	/*ヘッダーリストの設定*/
+	li{
+		display: flex;						/*リストを横並びにする*/
+		justify-content: flex-end;			/*アイテムを末尾に寄せる*/
+		list-style: none;					/*リストの点削除*/
+		margin: 20px 25px 0 auto;			/*余白の調整*/
+		float: right;						/*リストを右寄せ*/
+	}
+	
+	a{
+		text-decoration: none;				/*リンクの下線削除*/
+	}	
+		
+	/*検索ボックスの設定*/
+	.form-box{
+		display: flex;
+		border: 1px solid;
+		border-color: black;
+		border-radius: 2px;
+		width: 200px;
+
+	}
+
+	/*検索ボックスの設定*/
+	.form-input{
+		border: none;
+		width: 100%;
+	}
+
+	/*検索ボックスの設定*/
+	.form-button{
+		background-color: white;
+		border: none;
+	}
+	
+	/*画像を中央余生にする設定*/
+	.center{
+		text-align: center;
+	}
+	
+	/*金沢駅の画像設定*/
+	.kanazawa{
+		margin-top: 50px;
+		width: 1000px;
+	}
+	
+	/*「そうだ石川、行こう。」画像設定*/
+	.ishikawa{
+		margin-top: 35px;
+		margin-left: 100px;
+		position: absolute;
+		width: 160px;
+	}
+	
+	/*画像にマウスカーソルが触れた時の処理*/
+	.ishikawa:hover{
+		filter: contrast(50%);
+	}
+	
+	/*メニューの繰り返し表示設定*/
+	.wrap{
+	  	display:flex;
+		left: 200px;
+		width: fit-content;
+		margin: 0 auto;
+  }
+	
+	/*メニューの箱の作成*/
+	.index-box{
+		display: flex;
+		font-size: 18px;
+		background-color: black;
+		color: white;
+		align-items: center;
+		justify-content: center;
+		width: 200px;
+		height: 70px;
+	}
+	
+	/*各メニューに触れた際の処理*/
+	.index-box:hover{
+		background-color: grey;
+	}
+
+	/*戻るボタンの設定*/
+	.back-button{
+		background: #eee;
+	    border-radius: 3px;
+	    position: relative;
+	    display: flex;
+	    justify-content: space-around;
+	    align-items: center;
+	    margin: 0 auto;
+	    max-width: 280px;
+	    padding: 10px 25px;
+	    color: #313131;
+	    transition: 0.3s ease-in-out;
+	    font-weight: 500;
+	    /*戻るボタンを左下に固定する*/
+	    position: fixed;
+	    top: 20px;
+	    left: 20px;
+	}
+	
+	/*戻るボタンの設定*/
+	.back-button:hover{
+		background: #313131;
+	    color: #FFF;
+	}
